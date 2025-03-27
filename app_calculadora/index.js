@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const porta = 3000;
 
-const calculadora = require('./util/calculadora');
+const calculadora = require('./calculadora');
 
 app.get('/somar/:a/:b', (req, res) => {
   const a = parseFloat(req.params.a);
