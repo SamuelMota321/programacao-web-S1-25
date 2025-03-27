@@ -1,11 +1,12 @@
-const somar = (a, b) => a + b;
-const subtrair = (a, b) => a - b;
-const dividir = (a, b) => a / b;
-const multiplicar = (a, b) => a * b;
-
 module.exports = {
-    somar,
-    subtrair,
-    dividir,
-    multiplicar
-};
+    somar: (a, b) => a + b,
+    subtrair: (a, b) => a - b,
+    multiplicar: (a, b) => a * b,
+    dividir: (a, b) => {
+      if (b === 0) {
+        return 'Erro: Divisão por zero não permitida';
+      }
+      return a / b;
+    }
+  };
+  
