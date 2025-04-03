@@ -33,5 +33,5 @@ app.get('/dividir/:a/:b', (req, res) => {
 });
 
 app.listen(porta, () => {
-  console.log(`Servidor rodando na porta "http://localhost:${porta}/"`);
+  console.log(`Servidor rodando na porta "http://localhost:${porta}"`);
 });
